@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me amas?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #mensaje {
+            display: none;
+            font-size: 48px;
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Me amas?</h1>
+    <button onclick="alert('¡Yo también te amo!')">Sí</button>
+    <button onclick="mostrarMensaje()">Sí, mucho</button>
+    <div id="mensaje">¡YO TAMBIÉN!</div>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById('mensaje').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
